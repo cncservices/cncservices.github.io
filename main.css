@@ -1,0 +1,46 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maincontainer{
+    position: relative;
+    width: 492px;
+    height: 276px;
+}
+
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.5s linear;
+}
+
+.thecard:hover{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url("logo.jpg");
+    background-repeat: no-repeat;
+}
+
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #fafafa;
+    color: #333;
+    transform: rotateY(180deg);
+}
